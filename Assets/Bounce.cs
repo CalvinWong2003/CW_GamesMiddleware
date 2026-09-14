@@ -2,6 +2,13 @@ using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
+    public PlanePhysics thePlane;
+    public float Radius 
+    {
+        get { return transform.localScale.x/2f; }
+        set { transform.localScale = Vector3.one * value * 2; }
+    }
+
     Vector3 velocity = Vector3.zero;
     Vector3 acceleration = Vector3.zero;
 
@@ -26,9 +33,21 @@ public class Bounce : MonoBehaviour
         transform.position += velocity * Time.deltaTime;
 
         //detect collision
-        if(transform.position.y < 0.5f)
+        if(parallel_Distance(transform.position - thePlane.transform.position, thePlane.Normal) < Radius)
         {
+            transform.position -= velocity * Time.deltaTime;
             velocity = -CoR * velocity;
         }
     }
+
+    /// <summary>
+    /// Returns the magnitude of the parallel component of vector v parallel to vector n
+    /// </summary>
+    /// <param name = "v"> Vector to be decomposed </param>
+    /// <param name = "n"> Unit vector parallel to above component </param>
+    public float parallel_Distance(Vector3 v, Vector3 n)
+    {
+        return Vector3.Dot(v, n.normalized);
+    }
+
 }
