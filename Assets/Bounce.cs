@@ -35,8 +35,13 @@ public class Bounce : MonoBehaviour
         //detect collision
         if(parallel_Distance(transform.position - thePlane.transform.position, thePlane.Normal) < Radius)
         {
-            transform.position -= velocity * Time.deltaTime;
-            velocity = -CoR * velocity;
+            //transform.position += velocity * Time.deltaTime;
+            //velocity = CoR * velocity;
+            Vector3 parallelComp = parallel_Comp(velocity, thePlane.Normal);
+            Vector3 perpendicularComp = perpendicular_Comp(velocity, thePlane.Normal);
+            velocity = perpendicularComp - (CoR * parallelComp);
+            transform.position += velocity * Time.deltaTime;
+            transform.position -= perpendicularComp * Time.deltaTime;
         }
     }
 
@@ -48,6 +53,15 @@ public class Bounce : MonoBehaviour
     public float parallel_Distance(Vector3 v, Vector3 n)
     {
         return Vector3.Dot(v, n.normalized);
+    }
+
+    public Vector3 parallel_Comp(Vector3 v, Vector3 n)
+    {
+        return Vector3.Dot(v, n.normalized) * n.normalized;
+    }
+    public Vector3 perpendicular_Comp(Vector3 v, Vector3 n)
+    {
+        return v - parallel_Comp(v,n);
     }
 
 }
