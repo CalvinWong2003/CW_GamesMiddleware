@@ -11,6 +11,10 @@ public class Bounce : MonoBehaviour
 
     Vector3 velocity = Vector3.zero;
     Vector3 acceleration = Vector3.zero;
+    
+    Vector3 oldVelocity = Vector3.zero;
+    Vector3 oldPosition = Vector3.zero;
+    float d0 = 0;
 
     float CoR = 0.75f; //Coefficient of Restitution
 
@@ -25,6 +29,9 @@ public class Bounce : MonoBehaviour
     {
         acceleration = new Vector3 (0, -9.8f, 0);
 
+        oldVelocity = velocity;
+        oldPosition = transform.position;
+
         // v = u + a * t
         //velocity = velocity + acceleration * Time.deltaTime;
         velocity += acceleration * Time.deltaTime;
@@ -33,7 +40,8 @@ public class Bounce : MonoBehaviour
         transform.position += velocity * Time.deltaTime;
 
         //detect collision
-        if(parallel_Distance(transform.position - thePlane.transform.position, thePlane.Normal) < Radius)
+        float d1 = parallel_Distance(transform.position - thePlane.transform.position, thePlane.Normal) - Radius;
+        if (d1 < 0)
         {
             //transform.position += velocity * Time.deltaTime;
             //velocity = CoR * velocity;
@@ -43,6 +51,23 @@ public class Bounce : MonoBehaviour
             transform.position += velocity * Time.deltaTime;
             transform.position -= perpendicularComp * Time.deltaTime;
         }
+        d0 = d1;
+
+        //Calculating Time of Impact (ToI)
+        float totalTime = (d1 * Time.deltaTime) - (d0 * Time.deltaTime);
+        float vdrop = (d1 - d0)/totalTime;
+        float ToI = -d0 / vdrop;
+        Vector3 VoI = oldVelocity + acceleration * ToI;
+        Vector3 PoI = oldPosition + VoI * ToI;
+
+        //Resolving collision (adjusting velocity for each bounce)
+        Vector3 parallelVelocity = parallel_Comp(velocity, thePlane.Normal);
+        Vector3 perpendicularVelocity = perpendicular_Comp(velocity, thePlane.Normal);
+        Vector3 VoIout = perpendicularVelocity - CoR * parallelVelocity;
+
+        //Fast Forward to current frame
+        float timeRemaining = totalTime - ToI;
+        Vector3 currentPosition = PoI + velocity * timeRemaining;
     }
 
     /// <summary>
@@ -63,5 +88,4 @@ public class Bounce : MonoBehaviour
     {
         return v - parallel_Comp(v,n);
     }
-
 }
