@@ -11,12 +11,12 @@ public class Bounce : MonoBehaviour
 
     Vector3 velocity = Vector3.zero;
     Vector3 acceleration = Vector3.zero;
-    
     Vector3 oldVelocity = Vector3.zero;
     Vector3 oldPosition = Vector3.zero;
     float d0 = 0;
-
     float CoR = 0.75f; //Coefficient of Restitution
+
+    //public List<ICollidable> L;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,29 +45,41 @@ public class Bounce : MonoBehaviour
         {
             //transform.position += velocity * Time.deltaTime;
             //velocity = CoR * velocity;
-            Vector3 parallelComp = parallel_Comp(velocity, thePlane.Normal);
-            Vector3 perpendicularComp = perpendicular_Comp(velocity, thePlane.Normal);
-            velocity = perpendicularComp - (CoR * parallelComp);
-            transform.position += velocity * Time.deltaTime;
-            transform.position -= perpendicularComp * Time.deltaTime;
+            //Vector3 parallelComp = parallel_Comp(velocity, thePlane.Normal);
+            //Vector3 perpendicularComp = perpendicular_Comp(velocity, thePlane.Normal);
+            //velocity = perpendicularComp - (CoR * parallelComp);
+            //transform.position += velocity * Time.deltaTime;
+            //transform.position -= perpendicularComp * Time.deltaTime;
+
+            //Calculating Time of Impact (ToI)
+            float totalTime = Time.deltaTime;
+            float vdrop = (d1 - d0)/totalTime;
+            float ToI = -d0 / vdrop;
+            Vector3 VoI = oldVelocity + acceleration * ToI;
+            Vector3 PoI = oldPosition + VoI * ToI;
+
+            //Resolving collision (adjusting velocity for each bounce)
+            Vector3 parallelVelocity = parallel_Comp(VoI, thePlane.Normal);
+            Vector3 perpendicularVelocity = perpendicular_Comp(VoI, thePlane.Normal);
+            Vector3 VoIout = perpendicularVelocity - CoR * parallelVelocity;
+
+            //Fast Forward to current frame
+            float timeRemaining = totalTime - ToI;
+            Vector3 finalvelocity = VoIout + acceleration * timeRemaining;
+            Vector3 currentPosition = PoI + (finalvelocity * timeRemaining);
         }
         d0 = d1;
 
-        //Calculating Time of Impact (ToI)
-        float totalTime = (d1 * Time.deltaTime) - (d0 * Time.deltaTime);
-        float vdrop = (d1 - d0)/totalTime;
-        float ToI = -d0 / vdrop;
-        Vector3 VoI = oldVelocity + acceleration * ToI;
-        Vector3 PoI = oldPosition + VoI * ToI;
-
-        //Resolving collision (adjusting velocity for each bounce)
-        Vector3 parallelVelocity = parallel_Comp(velocity, thePlane.Normal);
-        Vector3 perpendicularVelocity = perpendicular_Comp(velocity, thePlane.Normal);
-        Vector3 VoIout = perpendicularVelocity - CoR * parallelVelocity;
-
-        //Fast Forward to current frame
-        float timeRemaining = totalTime - ToI;
-        Vector3 currentPosition = PoI + velocity * timeRemaining;
+        //for (int i = 0; i < List<ICollidable>; i++)
+        //{
+        //    for (int j = i + 1; j < List<ICollidable>;)
+        //    {
+        //        if(L[i].collidingWith(L[j]))
+        //        {
+        //
+        //        }
+        //    }
+        //}
     }
 
     /// <summary>
