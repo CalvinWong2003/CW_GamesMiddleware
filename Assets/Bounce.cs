@@ -16,7 +16,7 @@ public class Bounce : MonoBehaviour
     float d0 = 0;
     float CoR = 0.75f; //Coefficient of Restitution
 
-    //public List<ICollidable> L;
+    //public GameObject List<ICollidable>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -55,18 +55,37 @@ public class Bounce : MonoBehaviour
             float totalTime = Time.deltaTime;
             float vdrop = (d1 - d0)/totalTime;
             float ToI = -d0 / vdrop;
-            Vector3 VoI = oldVelocity + acceleration * ToI;
-            Vector3 PoI = oldPosition + VoI * ToI;
+            Vector3 VoI = oldVelocity + (acceleration * ToI);
+            Vector3 PoI = oldPosition + (VoI * ToI);
 
             //Resolving collision (adjusting velocity for each bounce)
             Vector3 parallelVelocity = parallel_Comp(VoI, thePlane.Normal);
             Vector3 perpendicularVelocity = perpendicular_Comp(VoI, thePlane.Normal);
-            Vector3 VoIout = perpendicularVelocity - CoR * parallelVelocity;
+            Vector3 VoIout = perpendicularVelocity - (CoR * parallelVelocity);
 
             //Fast Forward to current frame
             float timeRemaining = totalTime - ToI;
-            Vector3 finalvelocity = VoIout + acceleration * timeRemaining;
+            Vector3 finalvelocity = VoIout + (acceleration * timeRemaining);
             Vector3 currentPosition = PoI + (finalvelocity * timeRemaining);
+            velocity = finalvelocity;
+            transform.position += finalvelocity * Time.deltaTime;
+            // transform.position -= perpendicularVelocity * Time.deltaTime;
+
+            //Radius of two spheres
+            float r1 = transform.localScale.x / 2f;
+            float r2 = transform.localScale.x / 2f;
+
+            //Mass of two spheres
+            float mA = 0;
+            float mB = 0;
+
+            //Velocity of two spheres
+            Vector3 v1 = parallelVelocity + perpendicularVelocity;
+            Vector3 v2 = parallelVelocity + perpendicularVelocity;
+
+            //Conservation of Momentum
+            float vA2 = ((mA - mB)/(mA + mB)) + ((2 * mB)/(mA + mB));
+
         }
         d0 = d1;
 
