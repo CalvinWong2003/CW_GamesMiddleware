@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class Bounce : MonoBehaviour
+public class Bounce : MonoBehaviour, ICollidable
 {
     public PlanePhysics thePlane;
+    public Bounce Sphere2;
     public float Radius 
     {
         get { return transform.localScale.x/2f; }
         set { transform.localScale = Vector3.one * value * 2; }
     }
-
+    //Mass of two spheres
+    float mA = 10f;
+    float mB = 5f;
     Vector3 velocity = Vector3.zero;
     Vector3 acceleration = Vector3.zero;
     Vector3 oldVelocity = Vector3.zero;
@@ -16,14 +19,24 @@ public class Bounce : MonoBehaviour
     float d0 = 0;
     float CoR = 0.75f; //Coefficient of Restitution
 
-    //public GameObject List<ICollidable>();
+    //Vector3 p1 = transform.position;
+    //Vector3 p2 = Sphere2.transform.position;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         print(transform.position);
     }
-
+    public bool collidingWith(ICollidable c)
+    {
+        if(c is PlanePhysics)
+        {
+            return c.collidingWith(this);
+        }
+        //Must be sphere on sphere
+        Bounce otherSphere = c as Bounce;
+        return (Vector3.Distance(transform.position, otherSphere.transform.position) - Radius - otherSphere.Radius) < 0;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -70,35 +83,8 @@ public class Bounce : MonoBehaviour
             velocity = finalvelocity;
             transform.position += finalvelocity * Time.deltaTime;
             // transform.position -= perpendicularVelocity * Time.deltaTime;
-
-            //Radius of two spheres
-            float r1 = transform.localScale.x / 2f;
-            float r2 = transform.localScale.x / 2f;
-
-            //Mass of two spheres
-            float mA = 0;
-            float mB = 0;
-
-            //Velocity of two spheres
-            Vector3 v1 = parallelVelocity + perpendicularVelocity;
-            Vector3 v2 = parallelVelocity + perpendicularVelocity;
-
-            //Conservation of Momentum
-            float vA2 = ((mA - mB)/(mA + mB)) + ((2 * mB)/(mA + mB));
-
         }
         d0 = d1;
-
-        //for (int i = 0; i < List<ICollidable>; i++)
-        //{
-        //    for (int j = i + 1; j < List<ICollidable>;)
-        //    {
-        //        if(L[i].collidingWith(L[j]))
-        //        {
-        //
-        //        }
-        //    }
-        //}
     }
 
     /// <summary>
