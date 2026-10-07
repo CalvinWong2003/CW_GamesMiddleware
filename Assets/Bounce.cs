@@ -93,11 +93,10 @@ public class Bounce : MonoBehaviour, ICollidable
     /// </summary>
     /// <param name = "v"> Vector to be decomposed </param>
     /// <param name = "n"> Unit vector parallel to above component </param>
-    public float parallel_Distance(Vector3 v, Vector3 n)
+    public static float parallel_Distance(Vector3 v, Vector3 n)
     {
         return Vector3.Dot(v, n.normalized);
     }
-
     public Vector3 parallel_Comp(Vector3 v, Vector3 n)
     {
         return Vector3.Dot(v, n.normalized) * n.normalized;
@@ -105,5 +104,17 @@ public class Bounce : MonoBehaviour, ICollidable
     public Vector3 perpendicular_Comp(Vector3 v, Vector3 n)
     {
         return v - parallel_Comp(v,n);
+    }
+
+    public void Resolve(ICollidable c, ref Vector3 newPosition, ref Vector3 newVelocity)
+    {
+        if(c is PlanePhysics)
+        {
+
+        }
+        else 
+        {
+
+        }
     }
 }

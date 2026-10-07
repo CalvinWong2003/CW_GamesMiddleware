@@ -25,8 +25,10 @@ public class ManagerScript : MonoBehaviour
             {
                 if(allObjects[i].collidingWith(allObjects[j]))
                 {
+                    Vector3 newPosition = Vector3.zero, newVelocity = Vector3.zero;
+
                     //Collision has occurred
-                    allObjects[i].Resolve(allObjects[j]);
+                    allObjects[i].Resolve(allObjects[j], ref newPosition, ref newVelocity);
                 }
             }
         }

@@ -9,11 +9,25 @@ public class PlanePhysics : MonoBehaviour, ICollidable
     }
    public bool collidingWith(ICollidable c)
     {
-        if(c is PlanePhysics)
+        if (c is PlanePhysics)
+        {
             return false;
+        }
         //Must be a Sphere
         Bounce sphere = c as Bounce;
         return parallel_Distance(sphere.transform.position - transform.position, Normal) - Radius - sphere.Radius < 0;
+    }
+
+    public void Resolve(ICollidable c, ref Vector3 newPosition, ref Vector3 newVelocity)
+    {
+        if (c is Bounce)
+        {
+
+        }
+        else
+        {
+
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
