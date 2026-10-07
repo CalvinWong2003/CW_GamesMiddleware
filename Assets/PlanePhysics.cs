@@ -15,6 +15,7 @@ public class PlanePhysics : MonoBehaviour, ICollidable
         Bounce sphere = c as Bounce;
         return parallel_Distance(sphere.transform.position - transform.position, Normal) - Radius - sphere.Radius < 0;
     }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

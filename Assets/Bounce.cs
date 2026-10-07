@@ -12,6 +12,7 @@ public class Bounce : MonoBehaviour, ICollidable
     //Mass of two spheres
     float mA = 10f;
     float mB = 5f;
+
     Vector3 velocity = Vector3.zero;
     Vector3 acceleration = Vector3.zero;
     Vector3 oldVelocity = Vector3.zero;
