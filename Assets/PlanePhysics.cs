@@ -9,24 +9,23 @@ public class PlanePhysics : MonoBehaviour, ICollidable
     }
    public bool collidingWith(ICollidable c)
     {
-        if (c is PlanePhysics)
+        if (c is Bounce ball)
         {
-            return false;
+            float distanceToPlane = Vector3.Dot(ball.transform.position - transform.position, Normal);
+            return Mathf.Abs(distanceToPlane) <= ball.Radius;
         }
-        //Must be a Sphere
-        Bounce sphere = c as Bounce;
-        return parallel_Distance(sphere.transform.position - transform.position, Normal) - Radius - sphere.Radius < 0;
+        return false;
     }
 
     public void Resolve(ICollidable c, ref Vector3 newPosition, ref Vector3 newVelocity)
     {
         if (c is Bounce)
         {
-
+            c.collidingWith(this);
         }
         else
         {
-
+            
         }
     }
 

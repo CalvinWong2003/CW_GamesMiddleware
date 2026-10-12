@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bounce : MonoBehaviour, ICollidable
 {
     public PlanePhysics thePlane;
-    public Bounce Sphere2;
+    //public Bounce Sphere2;
     public float Radius 
     {
         get { return transform.localScale.x/2f; }

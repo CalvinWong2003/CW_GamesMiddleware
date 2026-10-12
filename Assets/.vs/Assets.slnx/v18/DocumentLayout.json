@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "PlanePhysics.cs",
               "ToolTip": "C:\\Users\\StudentCalvinWong(TL\\Desktop\\CW_GM\\Assets\\PlanePhysics.cs",
               "RelativeToolTip": "PlanePhysics.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAB2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T09:24:53.675Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "ICollidable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T09:16:52.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T09:16:52.472Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Bounce.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAAACEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T09:14:37.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T09:14:37.891Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "ManagerScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T09:05:58.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T09:05:58.951Z"
             }
           ]
         }
