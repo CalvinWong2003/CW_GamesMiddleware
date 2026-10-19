@@ -433,6 +433,7 @@
 "Assets/ManagerScript.cs"
 "Assets/PlanePhysics.cs"
 "Assets/Sphere.cs"
+"Assets/TestScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 43
+    y: 0
     width: 1920
     height: 36
   m_SerializedDataModeController:
@@ -607,10 +607,8 @@ MonoBehaviour:
     m_LastClickedID:
       m_rawData: 568105584918811996
     m_ExpandedIDs:
-    - m_rawData: 568105589213755684
     - m_rawData: 0
-    - m_rawData: 568105584918811996
-    - m_rawData: 568105587066273791
+    - m_rawData: 568105584918812038
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -644,7 +642,7 @@ MonoBehaviour:
       m_rawData: 0
     m_ExpandedIDs:
     - m_rawData: 0
-    - m_rawData: 568105584918811996
+    - m_rawData: 568105584918812038
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -729,8 +727,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1466
-    y: 79
+    x: 1467
+    y: 24
     width: 453
     height: 907
   m_SerializedDataModeController:
@@ -784,7 +782,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79
+    y: 24
     width: 235
     height: 672
   m_SerializedDataModeController:
@@ -805,8 +803,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_rawData: 568105584918811806
+      m_SelectedIDs: []
       m_LastClickedID:
         m_rawData: 0
       m_ExpandedIDs:
@@ -858,8 +855,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 236
-    y: 79
+    x: 237
+    y: 24
     width: 1228
     height: 672
   m_SerializedDataModeController:
@@ -1291,7 +1288,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.09763373, y: 0.825213, z: -0.15042748, w: -0.53559554}
   m_Size:
-    m_Target: 9.530661
+    m_Target: 7.566388
     speed: 2
     m_Value: 9.530661
   m_Ortho:
@@ -1456,7 +1453,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 777
+    y: 722
     width: 1465
     height: 209
   m_SerializedDataModeController:
