@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.5/staging' branch; Version is '6000.5.9f1 (b57deb96f08d) revision 11894251'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-StudentCalvinWong(TL" at "2026-10-19T08:45:48.9993846Z"
 OS: 'Windows 11  (10.0.26200) Enterprise' Language: 'en' Physical Memory: 32210 MB
 BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-10-19T08:28:09Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-StudentCalvinWong(TL" at "2026-10-19T08:28:09.1518171Z"
+Date: 2026-10-19T08:45:48Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.5.9f1\Editor\Unity.exe
@@ -24,36 +24,6 @@ LicenseClient-StudentCalvinWong(TL
 ZbExFymYtZYWJN6firtvsO4DHQTgp5eDlIJ_Un8wx0I005f
 Successfully changed project path to: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM
 C:/Users/StudentCalvinWong(TL/Desktop/CW_GM
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.3'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-StudentCalvinWong(TL"
-[Licensing::IpcConnector] LicenseClient-StudentCalvinWong(TL channel disconnected successfully.
-[Licensing::IpcConnector] Channel LicenseClient-StudentCalvinWong(TL-6000.5.9 doesn't exist
-[Licensing::Module] Successfully launched the LicensingClient (PId: 7812)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-StudentCalvinWong(TL-6000.5.9" at "2026-10-19T08:28:13.9584891Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 7812, path: "C:/Program Files/Unity/Hub/Editor/6000.5.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.3+d7ffd15
-  Session Id:              c05a461f51d84c3f923c83cb7ee432f9
-  Correlation Id:          4be4cdae0867ea8f9dfe9d0584c42b2e
-  External correlation Id: 7930159968469061379
-  Machine Id:              XawffDOBGQLAOkWW+5BFegLphRg=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-StudentCalvinWong(TL-6000.5.9" (connect: 1.93s, validation: 0.10s, handshake: 0.01s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-StudentCalvinWong(TL-6000.5.9-notifications" at "2026-10-19T08:28:14.0734227Z"
-[Licensing::Module] Connected to LicensingClient (PId: 7812, launch time: 0.08, total connection time: 2.05s)
-[Licensing::Client] Successfully updated the access token
-[Licensing::Module] Successfully updated the access token ZbExFymYtZ...
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: 5773457404144-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 4.98s
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -91,18 +61,52 @@ C:/Users/StudentCalvinWong(TL/Desktop/CW_GM
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [25792]  Target information:
+Player connection [22848]  Target information:
 
-Player connection [25792]  * "[IP] 10.5.29.170 [Port] 55504 [Flags] 2 [Guid] 2656771264 [EditorId] 2656771264 [Version] 1048832 [Id] WindowsEditor(7,R300-KY-92BJDJ4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22848]  * "[IP] 10.5.29.170 [Port] 55504 [Flags] 2 [Guid] 1602852834 [EditorId] 1602852834 [Version] 1048832 [Id] WindowsEditor(7,R300-KY-92BJDJ4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [25792]  * "[IP] 192.168.56.1 [Port] 55504 [Flags] 2 [Guid] 2656771264 [EditorId] 2656771264 [Version] 1048832 [Id] WindowsEditor(7,R300-KY-92BJDJ4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22848]  * "[IP] 192.168.56.1 [Port] 55504 [Flags] 2 [Guid] 1602852834 [EditorId] 1602852834 [Version] 1048832 [Id] WindowsEditor(7,R300-KY-92BJDJ4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [25792] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [25792] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22848] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [22848] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-25560" after 0.0 seconds.
+[Package Manager] Connected to IPC stream "Upm-32660" after 0.0 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.3'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-StudentCalvinWong(TL"
+[Licensing::IpcConnector] LicenseClient-StudentCalvinWong(TL channel disconnected successfully.
+[Licensing::IpcConnector] Channel LicenseClient-StudentCalvinWong(TL-6000.5.9 doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 2988)
+Starting IPC server.
+Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-StudentCalvinWong(TL-6000.5.9, press Ctrl-C to exit.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-StudentCalvinWong(TL-6000.5.9" at "2026-10-19T08:45:54.3108915Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 2988, path: "C:/Program Files/Unity/Hub/Editor/6000.5.9f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              fbafda3181534e54b1ebdcc7d2b1cc2d
+  Correlation Id:          661caaaf8eb718b42c862e611a36e363
+  External correlation Id: 5510309892825551802
+  Machine Id:              XawffDOBGQLAOkWW+5BFegLphRg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-StudentCalvinWong(TL-6000.5.9" (connect: 1.29s, validation: 0.31s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-StudentCalvinWong(TL-6000.5.9-notifications" at "2026-10-19T08:45:54.6378393Z"
+[Licensing::Module] Connected to LicensingClient (PId: 2988, launch time: 0.02, total connection time: 1.61s)
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated the access token ZbExFymYtZ...
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 5773457404144-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 5.71s
+[Licensing::Module] Licensing is initialized (took 3.48s).
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
@@ -111,7 +115,6 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Artifact Garbage Collection - Removed 1 unused hashed content files
 Initialize engine version: 6000.5.9f1 (b57deb96f08d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.9f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/StudentCalvinWong(TL/Desktop/CW_GM/Assets
@@ -136,342 +139,25 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.9f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.9f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
 CodeReloadManager initialized
 ImportWorker Server TCP listen port: 0
 AcceleratorClientConnectionCallback - disconnected - :0
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.028840 seconds.
+Registered in 0.002958 seconds.
 Native extension for WindowsStandalone target not found
-Package Manager log level set to [2]
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.806 seconds
-Domain Reload Profiling: 2946ms
-	BeginReloadAssembly (215ms)
-		CreateAndSetChildDomain (11ms)
-	RebuildCommonClasses (6ms)
-	RebuildNativeTypeToScriptingClass (124ms)
-	initialDomainReloadingComplete (176ms)
-	LoadAllAssembliesAndSetupDomain (618ms)
-		LoadAssemblies (202ms)
-		AnalyzeDomain (557ms)
-			TypeCache.Refresh (556ms)
-				TypeCache.ScanAssembly (522ms)
-	FinalizeReload (1807ms)
-		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (92ms)
-			ProcessInitializeOnLoadMethodAttributes (1577ms)
-[Licensing::Client] Successfully resolved entitlement details
-Application.AssetDatabase Initial Refresh Start
-[Package Manager] Restoring resolved packages state from cache
-[Licensing::Client] Successfully resolved entitlement details
-[Package Manager] Registered 37 packages:
-  Built-in packages:
-    com.unity.multiplayer.center@1.0.1 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.multiplayer.center@b860850997d0)
-    com.unity.modules.accessibility@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.accessibility)
-    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.adaptiveperformance)
-    com.unity.modules.ai@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.ai)
-    com.unity.modules.androidjni@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.androidjni)
-    com.unity.modules.animation@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.animation)
-    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.assetbundle)
-    com.unity.modules.audio@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.audio)
-    com.unity.modules.cloth@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.cloth)
-    com.unity.modules.director@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.director)
-    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.imageconversion)
-    com.unity.modules.imgui@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.imgui)
-    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.jsonserialize)
-    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.particlesystem)
-    com.unity.modules.physics@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.physics)
-    com.unity.modules.physics2d@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.physics2d)
-    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.physicscore2d)
-    com.unity.modules.screencapture@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.screencapture)
-    com.unity.modules.terrain@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.terrain)
-    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.terrainphysics)
-    com.unity.modules.tilemap@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.tilemap)
-    com.unity.modules.ui@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.ui)
-    com.unity.modules.uielements@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.uielements)
-    com.unity.modules.umbra@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.umbra)
-    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.unityanalytics)
-    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.unitywebrequest)
-    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
-    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
-    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
-    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.unitywebrequestwww)
-    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.vectorgraphics)
-    com.unity.modules.vehicles@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.vehicles)
-    com.unity.modules.video@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.video)
-    com.unity.modules.wind@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.wind)
-    com.unity.modules.xr@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.xr)
-    com.unity.modules.subsystems@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.subsystems)
-    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\Library\PackageCache\com.unity.modules.hierarchycore)
-[Subsystems] No new subsystems found in resolved package list.
-[Package Manager] Done registering packages in 0.09 seconds
-info: Microsoft.Hosting.Lifetime[14]
-      Now listening on: http://localhost:80
-info: Microsoft.Hosting.Lifetime[0]
-      Application started. Press Ctrl+C to shut down.
-info: Microsoft.Hosting.Lifetime[0]
-      Hosting environment: Production
-info: Microsoft.Hosting.Lifetime[0]
-      Content root path: C:\Users\StudentCalvinWong(TL\Desktop\CW_GM
-info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
-      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - application/grpc -
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 148.9588ms
-Starting: C:\Program Files\Unity\Hub\Editor\6000.5.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
-WorkingDir: C:/Users/StudentCalvinWong(TL/Desktop/CW_GM
-ExitCode: 0 Duration: 0s175ms
-*** Tundra build success (0.04 seconds), 0 items updated, 177 evaluated
-Total cache size 473896
-Total cache size after purge 473896, took 00:00:00.0146306
-AssetDatabase: script compilation time: 1.753728s
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.358 seconds
-Domain Reload Profiling: 772ms
-	BeginReloadAssembly (230ms)
-		DisableScriptedObjects (33ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (6ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (84ms)
-		LoadAssemblies (151ms)
-		AnalyzeDomain (10ms)
-			TypeCache.Refresh (7ms)
-	FinalizeReload (360ms)
-		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (72ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
-			AfterProcessingInitializeOnLoad (5ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
 Starting new worker id: 0 with log in C:/Users/StudentCalvinWong(TL/Desktop/CW_GM/Logs/AssetImportWorkerHW0.log
-
-Asset Pipeline Refresh (id=800556400aa972043868fb6eeb1a32e1): Total: 2.963 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
-	(Values over 0.05ms)
-	Summary:
-		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=588 ms
-		Asset DB Callback time: managed=33 ms, native=101 ms
-		Scripting: domain reloads=1, domain reload time=475 ms, compile time=1757 ms, other=7 ms
-		Project Asset Count: scripts=113, non-scripts=84
-		Asset File Changes: new=0, changed=0, moved=0, deleted=0
-		Scan Filter Count: 0
-	InvokePackagesCallback: 107.802ms
-	ApplyChangesToAssetFolders: 0.383ms
-	Scan: 62.527ms
-	Collect global state as custom dependencies: 14.204ms
-	CategorizeScriptCompilationAssets: 0.231ms
-	ProcessAssetsWithTransientArtifactChanges: 1.865ms
-	CategorizeAssets: 2.134ms
-	CompileScripts: 1756.782ms
-	ImportOutOfDateAssets: 394.606ms (361.351ms without children)
-		UnloadImportedAssets: 0.418ms
-		ImportSchedulerStart: 32.808ms
-	PostProcessAllAssets: 33.269ms
-		MonoPostProcessAllAssets: 33.211ms
-			SyncVS.PostprocessSyncProject 18.698ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 6.178ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 0.709ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.602ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.252ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.193ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.145ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.073ms
-	UnloadStreamsBegin: 2.187ms
-	GenerateScriptTypeHashes: 0.299ms
-	GenerateScriptTypeSerializationHashes: 0.723ms
-	Untracked: 574.393ms
-
-Application.AssetDatabase Initial Refresh End
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Scanning for USB devices : 4.729ms
-Initializing Unity extensions:
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-CW_GM
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Loaded scene 'Assets/BounceScene.unity'
-	Deserialize:            6.461 ms
-	Integration:            19.854 ms
-	Integration of assets:  0.002 ms
-	Thread Wait Time:       0.018 ms
-	Total Operation Time:   26.335 ms
-Unloading 82 unused Assets / (484.5 KB). Loaded Objects now: 907.
-Memory consumption went from 210.8 MB to 210.4 MB.
-Total: 4.504200 ms (FindLiveObjects: 0.197200 ms CreateObjectMapping: 0.020900 ms MarkObjects: 3.837800 ms  DeleteObjects: 0.244000 ms)
-
-[LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
-[LAYOUT] About to save layout C:\Users\StudentCalvinWong(TL\Desktop\CW_GM\UserSettings\Layouts\default-6000.dwlt
-[LAYOUT] About to save layout C:/Users/StudentCalvinWong(TL/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
-[MODES] ModeService[default].InitializeCurrentMode
-[MODES] ModeService[default].RaiseModeChanged(default, default)
-This project uses Input Manager, which is marked for deprecation. To manage input in your project, use the <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@latest">Input System package</a> instead.
-<RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
-<RI> Input initialized.
-[Project] Loading completed in 21.453 seconds
-	Project init time: 				20.427 seconds
-		Template init time: 		0.000 seconds
-		Package Manager init time: 		0.017 seconds
-		Asset Database init time: 		0.433 seconds
-		Global illumination init time: 	0.030 seconds
-		Assemblies load time: 			5.201 seconds
-		Unity extensions init time: 	0.001 seconds
-		Asset Database refresh time: 	2.963 seconds
-	Scene opening time: 			0.820 seconds
-##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1792398510583,"processId":25560,"projectLoad":21.4531993,"projectInit":20.4274054,"templateInit":0.0,"packageManagerInit":0.0166449,"assetDatabaseInit":0.4327816,"globalIlluminationInit":0.0296679,"assembliesLoad":5.2006542,"unityExtensionsInit":0.0006613,"assetDatabaseRefresh":2.9632278,"sceneOpening":0.8198809}
-##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1792398510584,"processId":25560,"editorVersion":"6000.5.9f1 (b57deb96f08d)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
-Worker ready: AssetImportWorkerHW0 0
-Asset Pipeline Refresh (id=7ca9a0c32d82afa4791ebc53068b043e): Total: 0.042 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
-Dynamic Batching is deprecated and will be removed in a future release. Use GPU Instancing instead. Disable Dynamic Batching in Project Settings > Player > Other Settings to remove this warning.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.PlayerSettingsBatchingWarning:WarnIfDynamicBatchingEnabled ()
-UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
-
-Start Indexing on Editor startup
-[Indexing] Starting Initial Indexing for Assets
-Created GICache directory at C:/Users/StudentCalvinWong(TL/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.022s, timestamps: [22.264 - 22.286]
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Client] Successfully updated the access token
-[Licensing::Module] Successfully updated access token: "ZbExFymY"... (expires: 2026-10-19T10:20:57Z)
-[Licensing::Client] Successfully resolved entitlement details
-Reloading assemblies for play mode.
-Reloading assemblies after forced synchronous recompile.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.794 seconds
-Domain Reload Profiling: 1266ms
-	BeginReloadAssembly (317ms)
-		DisableScriptedObjects (103ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (6ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (66ms)
-		LoadAssemblies (126ms)
-		AnalyzeDomain (5ms)
-			TypeCache.Refresh (3ms)
-	FinalizeReload (795ms)
-		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (56ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (400ms)
-
-Asset Pipeline Refresh (id=1ebbf7db0221b8242a08179add5d298b): Total: 1.413 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
-	(Values over 0.05ms)
-	Summary:
-		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=849 ms
-		Asset DB Callback time: managed=25 ms, native=5 ms
-		Scripting: domain reloads=1, domain reload time=530 ms, compile time=2 ms, other=0 ms
-		Project Asset Count: scripts=113, non-scripts=84
-		Asset File Changes: new=0, changed=0, moved=0, deleted=0
-		Scan Filter Count: 0
-	InvokePackagesCallback: 6.692ms
-	ApplyChangesToAssetFolders: 0.164ms
-	Collect global state as custom dependencies: 3.084ms
-	ProcessAssetsWithTransientArtifactChanges: 1.574ms
-	CategorizeAssets: 0.850ms
-	CompileScripts: 2.234ms
-	ImportOutOfDateAssets: 798.216ms (795.422ms without children)
-		UnloadImportedAssets: 2.252ms
-		ImportSchedulerStart: 0.510ms
-	PostProcessAllAssets: 28.353ms
-		PostProcessCallbackCreateDeferredMaterials 0.111ms
-		ShaderAssetModifiedCallback 0.079ms
-		RaytracingShaderImportPostprocess 0.063ms
-		PostprocessAssetsUpdateCachedIcon 0.062ms
-		MonoPostProcessAllAssets: 25.987ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 5.323ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.811ms
-			AssetPostprocessor.OnPostprocessAllAssets 3.568ms
-			SyncVS.PostprocessSyncProject 2.094ms
-			AssetChangedListener.OnPostprocessAllAssets 1.630ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.809ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.598ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 0.521ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.394ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.193ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 0.193ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.176ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.149ms
-			AssetEvents.OnPostprocessAllAssets 0.128ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 0.112ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.111ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.106ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.096ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.088ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.076ms
-			AudioContainerPostProcessor.OnPostprocessAllAssets 0.052ms
-	PostAssetChangesProfiler: 1.492ms
-	UnloadStreamsBegin: 1.308ms
-	GenerateScriptTypeHashes: 0.086ms
-	GenerateScriptTypeSerializationHashes: 0.207ms
-	Untracked: 559.802ms
-
-Loaded scene 'Temp/__Backupscenes/0.backup'
-	Deserialize:            0.887 ms
-	Integration:            16.202 ms
-	Integration of assets:  0.001 ms
-	Thread Wait Time:       0.012 ms
-	Total Operation Time:   17.103 ms
-(0.00, 5.00, 5.00)
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-UnityEngine.MonoBehaviour:print (object)
-Bounce:Start () (at Assets/Bounce.cs:29)
-
-(Filename: Assets/Bounce.cs Line: 29)
-
-(0.00, 5.00, -5.00)
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-UnityEngine.MonoBehaviour:print (object)
-Bounce:Start () (at Assets/Bounce.cs:29)
-
-(Filename: Assets/Bounce.cs Line: 29)
-
-5
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-UnityEngine.MonoBehaviour:print (object)
-ManagerScript:Start () (at Assets/ManagerScript.cs:16)
-
-(Filename: Assets/ManagerScript.cs Line: 16)
-
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-StudentCalvinWong(TL-6000.5.9-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-StudentCalvinWong(TL-6000.5.9 channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+debugger-agent: Unable to listen on 5364
+Exiting without the bug reporter. Application will terminate with return code 0Shut down.

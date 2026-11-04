@@ -1,4 +1,48 @@
-[2026-10-19T08:45:49.405Z][INFO] Command-line: 'C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.9f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe' server -s 32660 --ipc-path Unity-Upm-32660 -l 2 --log-file C:\\Users\\StudentCalvinWong\(TL\\Desktop\\CW_GM/Logs/upm.log
-[2026-10-19T08:45:49.435Z][INFO] IPC server started (IPC path=Unity-Upm-32660).
-[2026-10-19T08:45:49.435Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-32660.
-[2026-10-19T08:45:57.501Z][INFO] Shutting down UnityPackageManager.exe: parent process [32660] is no longer running.
+[2026-11-04T09:16:18.462Z][INFO] Command-line: 'C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.9f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe' server -s 23080 --ipc-path Unity-Upm-23080 -l 2 --log-file C:\\Users\\StudentCalvinWong\(TL\\Desktop\\CW_GM/Logs/upm.log
+[2026-11-04T09:16:18.497Z][INFO] IPC server started (IPC path=Unity-Upm-23080).
+[2026-11-04T09:16:18.497Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-23080.
+[2026-11-04T09:16:32.581Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-04T09:16:32.675Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-04T09:16:32.690Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-11-04T09:16:32.865Z][INFO] config:project:get-registries --> 200 (176 ms)
+[2026-11-04T09:16:32.867Z][INFO] project:list-packages --> 200 (286 ms)
+[2026-11-04T09:16:32.867Z][INFO] project:list-packages --> 200 (192 ms)
+[2026-11-04T09:16:35.358Z][INFO] project:resolve-packages <-- Request received
+params: {}
+[2026-11-04T09:16:35.764Z][INFO] Downloading package [com.unity.package-manager.metadata-6000.5@0.0.105] from registry 'https://packages.unity.com'
+[2026-11-04T09:16:36.156Z][INFO] Finished downloading package [com.unity.package-manager.metadata-6000.5@0.0.105] from registry 'https://packages.unity.com' (size: 11.5 kB, time: 392ms)
+[2026-11-04T09:16:36.514Z][INFO] project:resolve-packages --> 200 (1156 ms)
+[2026-11-04T09:16:51.094Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-04T09:16:51.122Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-04T09:16:51.166Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-11-04T09:16:51.184Z][INFO] config:project:get-registries --> 200 (18 ms)
+[2026-11-04T09:16:51.184Z][INFO] project:list-packages --> 200 (90 ms)
+[2026-11-04T09:16:51.205Z][INFO] project:list-packages --> 200 (83 ms)
+[2026-11-04T09:16:53.543Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-04T09:16:53.605Z][INFO] project:list-packages --> 200 (62 ms)
+[2026-11-04T09:16:54.440Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-04T09:16:54.492Z][INFO] project:list-packages --> 200 (52 ms)
+[2026-11-04T09:16:55.716Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-04T09:16:55.772Z][INFO] project:list-packages --> 200 (56 ms)
+[2026-11-04T09:18:21.160Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-04T09:18:21.203Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-11-04T09:18:21.214Z][INFO] config:project:get-registries --> 200 (11 ms)
+[2026-11-04T09:18:21.215Z][INFO] project:list-packages --> 200 (55 ms)
+[2026-11-04T09:23:31.344Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-04T09:23:31.394Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-11-04T09:23:31.407Z][INFO] config:project:get-registries --> 200 (13 ms)
+[2026-11-04T09:23:31.408Z][INFO] project:list-packages --> 200 (64 ms)
+[2026-11-04T09:24:05.167Z][INFO] Shutting down UnityPackageManager.exe: parent process [23080] is no longer running.
