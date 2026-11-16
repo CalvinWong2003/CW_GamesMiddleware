@@ -26,23 +26,35 @@ public class AnimateCharacter_BlendTree : MonoBehaviour
         Keyboard currentKeyboard = Keyboard.current;
 
         // If no keyboard is connected, skip processing
-        if (currentKeyboard == null) return;
+        if (currentKeyboard == null)
+        {
+            animator_Vertical = 0f;
+            return;
+        }
 
         if (currentKeyboard.wKey.isPressed)
         {
             moveDirection += Vector3.forward;
+            animator_Vertical = 0.5f;
         }
-        if (currentKeyboard.sKey.isPressed)
+        else if (currentKeyboard.sKey.isPressed)
         {
             moveDirection += Vector3.back;
+            animator_Vertical = 0.5f;
         }
-        if (currentKeyboard.aKey.isPressed)
+        else if (currentKeyboard.aKey.isPressed)
         {
             moveDirection += Vector3.left;
+            animator_Vertical = 0.5f;
         }
-        if (currentKeyboard.dKey.isPressed)
+        else if (currentKeyboard.dKey.isPressed)
         {
             moveDirection += Vector3.right;
+            animator_Vertical = 0.5f;
+        }
+        else
+        {
+            animator_Vertical = 0f; // Reset to idle when no movement keys are pressed
         }
 
         //Handles walking and running animations based on movement input
@@ -50,14 +62,10 @@ public class AnimateCharacter_BlendTree : MonoBehaviour
         {
             moveSpeed = 10.0f; // Increase speed when Left Shift is held down
             animator_Vertical = 1f;
-            animator_Horizontal = 0f;
-
         }
         else
         {
             moveSpeed = 5.0f; // Reset to normal speed when Left Shift is released
-            animator_Vertical = 0.5f;
-            animator_Horizontal= 0f;
         }
 
         // Normalize vector for consistent diagonal speed
@@ -78,7 +86,6 @@ public class AnimateCharacter_BlendTree : MonoBehaviour
             if (animator != null)
             {
                 animator.SetFloat("Vertical", animator_Vertical);
-                animator.SetFloat("Horizontal", animator_Horizontal);
             }
         }
         else
@@ -86,7 +93,6 @@ public class AnimateCharacter_BlendTree : MonoBehaviour
             if (animator != null)
             {
                 animator.SetFloat("Vertical", animator_Vertical);
-                animator.SetFloat("Horizontal", animator_Horizontal);
             }
         }
     }
